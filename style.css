@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+:root {
+    --primary-color: #14B8A6;
+    --blue-gray: #475569;
+    --true-gray: #E5E5E5;
+}
+
+body {
+    background-color: var(--blue-gray);
+    margin: 0px;
+    padding: 0px;
+    color: var(--true-gray);
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    font-weight: bold;
+
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    font-size: large;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+
+}
+
+.link-active {
+    border-bottom: 2px solid;
+}
+
+h1 {
+    text-align: center;
+}
+
+.formula {
+    border: 2px solid var(--primary-color);
+    margin: 1rem auto 2rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    display: block;
+}
+
+.container .container-question {
+    border: 2px solid var(--primary-color);
+    margin: 1rem auto 2rem auto;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.form-quiz {
+    width: 100%;
+}
+
+label,
+input {
+    margin: 1rem auto 2rem auto;
+
+}
+
+input {
+    width: 98%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.input-radio {
+    margin: unset;
+    width: unset;
+}
+
+button {
+    padding: 0.5rem;
+    margin: 1rem auto 2rem auto;
+    background-color: var(--primary-color);
+    font-family: inherit;
+    color: var(--true-gray);
+    border-radius: 0.5rem;
+    width: 100%;
+    font-weight: inherit;
+}
+
+#output {
+    text-align: center;
+}

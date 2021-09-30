@@ -7,13 +7,21 @@ checkHypotenuse.addEventListener('click', calculateHypotenuse);
 
 function calculateHypotenuse() {
 
-    var hypotenuse =  Math.sqrt(square(sideA.value) + square(sideB.value));
-    
-    output.innerText = "The length of Hypotenuse is " + hypotenuse + " 🛆" ;
-    
-    
+    if (Number(sideA.value) > 0 && Number(sideB.value) > 0) {
+
+        var hypotenuse = Math.sqrt(square(sideA.value) + square(sideB.value));
+
+        output.innerText = "The length of Hypotenuse is " + hypotenuse + " 🛆";
+    }
+    else{
+        output.innerText = "Lengths can't be negative."
+    }
+
+
+
+
 }
 
-function square(s){
-    return s*s;
+function square(s) {
+    return s * s;
 }
